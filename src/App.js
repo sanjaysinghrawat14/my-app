@@ -36,6 +36,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
         setMode('yellow')
         document.body.style.backgroundColor = '#EFE2BA';
         showAlert("yellow mode has been disabled!", 'success')
+      }else {
+        setMode('light')
+        document.body.style.backgroundColor = 'white';
+        showAlert("Light mode has been disabled!", 'success')
       }
     }
 

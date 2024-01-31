@@ -16,10 +16,10 @@ export default function Navbar(props) {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                        <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                        <Link className="nav-link" aria-current="page" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link active" aria-current="page" to="/about">{props.aboutText}</Link>
+                        <Link className="nav-link" aria-current="page" to="/about">{props.aboutText}</Link>
                     </li>
                 </ul>
                 <div className={`form-check form-switch text-${props.mode === 'dark' ? 'light' : 'dark'}`}>
@@ -30,9 +30,9 @@ export default function Navbar(props) {
                     <label htmlFor="themeSelector">Select theme</label>
                     <select id="myTheme" onChange={props.changeTheme}>
                         <option value=""> </option>
-                        <option value="red">Red</option>
-                        <option value="blue">Blue</option>
-                        <option value="yellow">Yellow</option>
+                        <option value="red" className="">Red &#128308;</option>
+                        <option value="blue" className="">Blue &#128309;</option>
+                        <option value="yellow" className="">Yellow &#128993;</option>
                     </select>
                 </div>
                 {/* <form className="d-flex" role="search">
